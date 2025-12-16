@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card NAV VARDHAN</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+ /* background ki details */
+  body {
+    margin: 0;
+ padding: 0;
+ background-color: #f0f2f5; /* bg cng */
+  font-family: 'Poppins', sans-serif;
+            /*  flexbox k liye */
+         display: flex;
+        justify-content: center;
+        align-items: center;
+            min-height: 100vh;
+        }
+
+/* Card ka box  */
+.card {
+ background-color: white;
+  width: 350px;
+ padding: 25px;
+ border-radius: 15px; /* card ko round kr diya  */
+ text-align: center;
+    /*  Box ki shadow  */
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+
+        /* Profile Image  */
+        .profile-img {
+      width: 120px;
+ height: 120px;
+  border-radius: 50%; /* image ko round shape mai kiya */
+ object-fit: cover;
+border: 4px solid #fff;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+     margin-bottom: 10px;
+        }
+
+ /* Typography */
+h2 { margin: 10px 0 5px; color: #333; }
+.role { color: #777; font-size: 0.9em; margin-bottom: 15px; }
+        
+        /* Social Links  */
+.social-links {
+ margin: 15px 0;
+        }
+        
+ /* Styling links  */
+.social-links a {
+text-decoration: none;
+    color: #007bff;
+ margin: 0 10px;
+ font-weight: bold;
+ transition: color 0.3s;
+        }
+.social-links a:hover {
+     color: #0056b3; 
+ }
+
+ /* Skills Section  */
+    .skills-section {
+            text-align: left;
+ margin-top: 15px;
+        }
+        .skills-list {
+         padding-left: 20px;
+         color: #555;
+        }
+
+     /* Projects Section */
+        .projects-table {
+     width: 100%;
+     margin-top: 15px;
+     border-collapse: collapse;
+     font-size: 0.9em;
+        }
+        .projects-table th, .projects-table td {
+            border-bottom: 1px solid #ddd;
+     padding: 8px;
+            text-align: left;
+        }
+
+        /* Form Styling  */
+        .contact-form {
+ margin-top: 20px;
+ display: flex;
+flex-direction: column;
+ gap: 10px;
+        }
+
+        /* Input and Textarea styling  */
+        input, textarea {
+    width: 100%;
+    padding: 10px;
+ border: 1px solid #ccc;
+    border-radius: 5px;
+     box-sizing: border-box; 
+        }
+
+        /* Button Styling */
+        button {
+  background-color: #333;
+color: white;
+padding: 10px;
+      border: none;
+      border-radius: 5px;
+    cursor: pointer;
+ transition: background 0.3s; 
+        }
+
+        button:hover {
+            background-color: #555; 
+        }
+        
+.footer-link {
+   display: block;
+  margin-top: 15px;
+font-size: 0.8em;
+color: #007bff;
+        }
+ </style>
+</head>
+<body>
+ <div class="card">
+    <img src="nxt.jpg" alt="Profile" class="profile-img">
+        
+ <h2>NAV VARDHAN SINGH</h2>
+ <span class="role">Web Developer</span>
+
+<div class="social-links">
+    <a href="https://github.com/THE-NAVVV">Github</a>
+    <a href="https://www.linkedin.com/in/navvardhan-singh-ranawat-923255364">LinkedIn</a>
+    
+</div>
+<hr style="border: 0; border-top: 1px solid #eee;">
+
+<div class="skills-section">
+<strong>My Skills</strong>
+<ul class="skills-list">
+ <li>HTML5 & CSS3</li>
+ <li>JavaScript</li>
+ <li>Python</li>
+ <li>UI/UX</li>
+ <li>Open Cv</li>
+    <li>Responsive Design</li>
+        </ul>
+        </div>
+
+<table class="projects-table">
+<thead>
+<tr>
+     <th>Project Name</th>
+ <th>Status</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+     <td>Dark mode extension</td>
+ <td>✅ Done</td>
+</tr>
+    <tr>
+<td>driver sleep alarm using open cv</td>
+ <td>✅ Done</td>
+</tr>
+<tr>
+     <td>sign language translator using open cv</td>
+ <td>✅ Done</td>
+</tr>
+<tr>
+     <td>Portfolio Website</td>
+<td>✅ Done</td>
+</tr>
+<tr>
+ <td>AI /ML task 1</td>
+<td>🚧 In Progress</td>
+</tr>
+</tbody>
+</table>
+
+
+<form class="contact-form" action="https://formspree.io/f/mblnvryk" method="POST">
+<input type="text" name="name" placeholder="Your Name" required> 
+<input type="email" name="email" placeholder="Your Email" required>
+ <textarea name="message" rows="3" placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+
+</form>
+<a href="#" class="footer-link">Visit Full Profile</a>
+    </div>
+
+</body>
+</html>
